@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1f1f1f;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-bottom: 5px solid rgb(255, 225, 0);
+    z-index: 1000;
+}
+
+nav .brand{
+    display: flex;
+    margin: 0 0 0 10px;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+
+nav .brand .brandS{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(248, 232, 7);
+}
+
+nav .brand .brandD{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(119, 125, 0);
+    margin-left: 2px;
+}
+
+nav .brand:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+nav .nav-ul{
+    font-size: 18px;
+    display: flex;
+    gap: 15px;
+    margin-right: 12px;
+}
+
+nav .nav-ul li, nav .nav-ul a{
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(255, 220, 23);
+    transition: all .34s ease-in-out;
+    -webkit-transition: all .34s ease-in-out;
+    -moz-transition: all .34s ease-in-out;
+    -ms-transition: all .34s ease-in-out;
+    -o-transition: all .34s ease-in-out;
+    font-weight: 500;
+}
+
+nav .nav-ul .home{
+    color: rgb(169, 111, 4);
+}
+
+nav .nav-ul a:hover{
+    color: rgb(169, 111, 4);
+}
+
+nav .nav-ul .ul-login{
+    background-color: gold;
+    color: white;
+    padding: 8px 10px;
+    font-size: 20px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    transition: all .34s ease-in-out;
+    -webkit-transition: all .34s ease-in-out;
+    -moz-transition: all .34s ease-in-out;
+    -ms-transition: all .34s ease-in-out;
+    -o-transition: all .34s ease-in-out;
+}
+
+nav .nav-ul .ul-login:hover{
+    background-color: rgb(169, 111, 4);
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.container .h1{
+    color: rgb(241, 245, 5);
+    font-weight: bold;
+    margin: 50px 0 15px 0;
+    font-size: 36px; 
+    text-align: center;
+}
+
+.container p{
+    padding: 0 40px;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(255, 196, 0);
+}
+
+.container .topupbtn{
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    border: none;
+    background-color: #ffea00;
+    color: #333;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -ms-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+}
+
+.container .topupbtn:hover{
+    background-color: #bbac0a;
+    color: rgb(45, 45, 45);
+    cursor: pointer;
+}
+
+.container .diamond-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 40px;
+}
+
+.container .diamond-grid .produk{
+    background-color: #333;
+    border: 2px solid #444;
+    position: relative;
+    padding: 20px;
+    width: 280px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all .45s ease-in-out;
+    -webkit-transition: all .45s ease-in-out;
+    -moz-transition: all .45s ease-in-out;
+    -ms-transition: all .45s ease-in-out;
+    -o-transition: all .45s ease-in-out;
+}
+
+.container .diamond-grid .produk:hover{
+    box-shadow: 0 0 18px rgb(255, 225, 0);
+    cursor: pointer;
+    border: none;
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+}
+
+.container .diamond-grid .produk i{
+    position: absolute;
+    right: 50px;
+    height: 120px;
+    font-size: 40px;
+}
+
+.container .diamond-grid .produk img{
+    height: 100px;
+    width: 100px;
+    margin: 20px 0 15px 0;
+}
+
+.container .diamond-grid .produk p{
+    font-size: 18px;
+}
+
+.container .diamond-grid .produk h3{
+    color: rgb(236, 211, 70);
+    margin-bottom: 30px;
+}
+
+.container .diamond-grid .produk button{
+    margin-bottom: 10px;
+    background-color: #333;
+    border: none;
+    border:1.5px solid gold;
+    color: gold;
+    padding: 5px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    transition: all .45s ease-in;
+    -webkit-transition: all .45s ease-in;
+    -moz-transition: all .45s ease-in;
+    -ms-transition: all .45s ease-in;
+    -o-transition: all .45s ease-in;
+}
+
+.container .diamond-grid .produk button:hover{
+    background-color: gold;
+    color: #594303;
+    cursor: pointer;
+}
+
+.keunggulan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.keunggulan .box{
+    width: 70%;
+    background-color: #21201d;
+    padding: 15px 20px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    color: white;
+    box-shadow: 0 8px 20px black;
+    transition: all .34s ease-in;
+    -webkit-transition: all .34s ease-in;
+    -moz-transition: all .34s ease-in;
+    -ms-transition: all .34s ease-in;
+    -o-transition: all .34s ease-in;
+}
+
+.keunggulan .box:hover{
+    box-shadow: 0 0 15px rgb(128, 108, 1);
+    cursor: pointer;
+    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+}
+
+.keunggulan .box i{
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.keunggulan .box h3{
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+
+.keunggulan .box p{
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 80px;
+    padding: 20px 40px;
+    color: white;
+    border-top: 3px solid gold;
+}
+
+footer h3{
+    font-size: 25px;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon a{
+    font-size: 30px;
+    color: gold;
+}
+
+footer p{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 650px){
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    nav .nav-ul{
+        margin-top: 10px;
+    }
+
+    nav .nav-ul li a{
+        font-size: 15px;
+    }
+
+    nav .nav-ul .ul-login{
+        font-size: 18px;
+        padding: 6px 10px;
+        font-weight: 400;
+    }
+
+    .container .h1{
+        font-size: 25px;
+        padding: 0 10px;
+    }
+
+    .container p{
+        font-size: 15px;
+    }
+
+    .container .topupbtn{
+        font-size: 16px;
+        padding: 7px 12px;
+    }
+
+    .container .diamond-grid .produk p{
+        font-size: 20px;
+    }
+
+    .container .diamond-grid .produk{
+        width: 85%;
+    }
+
+    .keunggulan .box{
+        width: 100%;
+        transition: all .34s ease-in;
+        -webkit-transition: all .34s ease-in;
+        -moz-transition: all .34s ease-in;
+        -ms-transition: all .34s ease-in;
+        -o-transition: all .34s ease-in;
+    }
+
+    .keunggulan .box:hover{
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+    }
+
+    footer h3{
+        font-size: 22px;
+    }
+
+    footer p{
+        font-size: 18px;
+    }
+}
