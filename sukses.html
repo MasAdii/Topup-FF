@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Transaksi Berhasil - Adi Store</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link rel="stylesheet" href="assest/css/sukses.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="icon-success">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h1>Transaksi Berhasil!</h1>
+            <div class="info">
+                <p>
+                    <strong>ID Player:</strong>
+                    <span id="idPlayer">-</span>
+                </p>
+                <p>
+                    <strong>Diamond:</strong>
+                    <span id="jumlahDiamond">-</span>
+                </p>
+                <p>
+                    <strong>Metode Pembayaran:</strong>
+                    <span id="metode">-</span>
+                </p>
+            </div>
+            <a href="index.html" class="btn-home">Kembali ke Beranda</a>
+        </div>
+        <audio id="successSound" src="assest/sound/success.mp3" preload="auto"></audio>
+        <script src="assest/js/sukses.js"></script>
+    </body>
+</html>

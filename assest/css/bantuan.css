@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1f1f1f;
+    font-family: "Poppins", sans-serif;
+}
+
+.animasi{
+    height: 100vh;
+    text-align: center;
+    display: none;
+}
+
+.spinner {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 5px solid rgba(139, 139, 139, 0.1);
+    border-top: 5px solid #d85817;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    -webkit-animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); }
+    100% { transform: rotate(360deg); -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); }
+}
+
+.animasi p{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 68, 0);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-bottom: 5px solid rgb(255, 225, 0);
+    z-index: 1000;
+}
+
+nav .brand{
+    display: flex;
+    margin: 0 0 0 10px;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+
+nav .brand .brandS{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(248, 232, 7);
+}
+
+nav .brand .brandD{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(119, 125, 0);
+    margin-left: 2px;
+}
+
+nav .brand:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+nav .nav-ul{
+    font-size: 18px;
+    display: flex;
+    gap: 15px;
+    margin-right: 12px;
+}
+
+nav .nav-ul li, nav .nav-ul a{
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(255, 220, 23);
+    transition: all .34s ease-in-out;
+    -webkit-transition: all .34s ease-in-out;
+    -moz-transition: all .34s ease-in-out;
+    -ms-transition: all .34s ease-in-out;
+    -o-transition: all .34s ease-in-out;
+    font-weight: 500;
+}
+
+nav .nav-ul .bantuan-a{
+    color: rgb(169, 111, 4);
+}
+
+nav .nav-ul a:hover{
+    color: rgb(169, 111, 4);
+}
+
+nav .nav-ul .ul-login{
+    background-color: gold;
+    color: white;
+    padding: 8px 10px;
+    font-size: 20px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    transition: all .34s ease-in-out;
+    -webkit-transition: all .34s ease-in-out;
+    -moz-transition: all .34s ease-in-out;
+    -ms-transition: all .34s ease-in-out;
+    -o-transition: all .34s ease-in-out;
+}
+
+nav .nav-ul .ul-login:hover{
+    background-color: rgb(169, 111, 4);
+    color: white;
+}
+
+.bantuan{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin: 40px 0 0 0;
+    color: white;
+    padding: 20px 60px;
+    background-color: rgb(255, 145, 0);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+details summary{
+    font-size: 22px;
+}
+
+details ol{
+    color: #ddd;
+    font-size: 19px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 80px;
+    padding: 20px 40px;
+    color: white;
+    border-top: 3px solid gold;
+}
+
+footer h3{
+    font-size: 25px;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon a{
+    font-size: 30px;
+    color: gold;
+}
+
+footer p{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 650px){
+    nav{
+        flex-direction: column;
+    }
+    nav .nav-ul{
+        font-size: 17px;
+        margin-top: 15px;
+    }
+    .bantuan{
+        padding: 10px 18px;
+        gap: 6px;
+    }
+    details summary{
+        font-size: 19px;
+    }
+    details ol{
+        padding: 0 20px;
+        font-size: 16px;
+        color: #ddd;
+    }
+    footer h3{
+        font-size: 22px;
+    }
+    footer p{
+        font-size: 18px;
+    }
+}

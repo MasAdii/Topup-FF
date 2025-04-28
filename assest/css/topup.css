@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1f1f1f;
+}
+
+.container-rotating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #2f2f2f;
+}
+
+.rotating-dots {
+    background: #424242;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: rotate 1.5s infinite linear;
+    border: 1px solid rgb(255, 162, 0);
+    box-shadow: 0 0 10px rgba(255, 212, 55, 0.5);
+    z-index: 1000;
+}
+
+.rotating-dots:nth-child(2){
+    z-index: 0;
+}
+
+.container-rotating p{
+    position: absolute;
+    font-weight: bold;
+    color: rgb(255, 152, 17);
+    font-size: 30px;
+}
+
+.rotating-dots::before,
+.rotating-dots::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-color: #ff9d00;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.rotating-dots::before {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+.rotating-dots::after{
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+@keyframes rotate{
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg); }
+} 
+
+.container{
+    display: none;
+    animation: muncul 1s ease-in forwards alternate;
+    -webkit-animation: muncul 1s ease-in forwards alternate;
+    opacity: .4;
+}
+
+@keyframes muncul {
+    to{
+        opacity: 1;
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-bottom: 5px solid rgb(255, 225, 0);
+    z-index: 1000;
+}
+
+nav .brand{
+    display: flex;
+    margin: 0 0 0 10px;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+
+nav .brand .brandS{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(248, 232, 7);
+}
+
+nav .brand .brandD{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(119, 125, 0);
+    margin-left: 2px;
+}
+
+nav .brand:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+nav .nav-ul{
+    font-size: 18px;
+    display: flex;
+    gap: 15px;
+    margin-right: 12px;
+}
+
+nav .nav-ul li, nav .nav-ul a{
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(255, 220, 23);
+    transition: all .34s ease-in-out;
+    -webkit-transition: all .34s ease-in-out;
+    -moz-transition: all .34s ease-in-out;
+    -ms-transition: all .34s ease-in-out;
+    -o-transition: all .34s ease-in-out;
+    font-weight: 500;
+}
+
+nav .nav-ul .topup{
+    color: rgb(169, 111, 4);
+}
+
+nav .nav-ul a:hover{
+    color: rgb(169, 111, 4);
+}
+
+nav .nav-ul .ul-login{
+    background-color: gold;
+    color: white;
+    padding: 8px 10px;
+    font-size: 20px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    transition: all .34s ease-in-out;
+    -webkit-transition: all .34s ease-in-out;
+    -moz-transition: all .34s ease-in-out;
+    -ms-transition: all .34s ease-in-out;
+    -o-transition: all .34s ease-in-out;
+}
+
+nav .nav-ul .ul-login:hover{
+    background-color: rgb(169, 111, 4);
+    color: white;
+}
+
+.topup-form{
+    width:85%;
+    margin: 40px auto;
+    background-color: #202020;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.topup-form h1{
+    text-align: center;
+    font-size: 35px;
+    color: gold;
+    font-weight: bold;
+    margin-bottom: 38px;
+}
+
+.topup-form .form{
+    margin-bottom: 30px;
+    border-bottom: 2px solid gold;
+    border-top: 2px solid gold;
+}
+
+.topup-form .form h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: rgb(246, 255, 0);
+}
+
+.topup-form .form input{
+    outline: none;
+    border: none;
+    padding: 10px 16px;
+    width: 65%;
+    background-color: #e6ff2c;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.topup-form h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #eeff00;
+    margin-bottom: 20px;
+}
+
+.topup-form .pilihan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 25px;
+}
+
+.pembayaran{
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.metode{
+    border: 1px solid rgb(255, 251, 0);
+    color: rgb(255, 217, 0);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 560;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transition: all .34s ease-in-out;
+    -webkit-transition: all .34s ease-in-out;
+    -moz-transition: all .34s ease-in-out;
+    -ms-transition: all .34s ease-in-out;
+    -o-transition: all .34s ease-in-out;
+}
+
+.metode:hover{
+    background-color: rgb(255, 196, 0);
+    color: black;
+}
+
+.pilihan{
+    border-bottom: 2px solid gold;
+}
+
+.box{
+    margin-bottom: 30px;
+    background-color: #464444;
+    box-shadow: 0 0 10px rgb(113, 113, 113);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    text-align: center;
+    padding: 30px 0;
+    width: 35%;
+    transition: all .34s ease-in;
+    -webkit-transition: all .34s ease-in;
+    -moz-transition: all .34s ease-in;
+    -ms-transition: all .34s ease-in;
+    -o-transition: all .34s ease-in;
+}
+
+.box:hover{
+    box-shadow: 0 0 15px rgb(255, 225, 0);
+    cursor: pointer;
+}
+
+.box.active{
+    background-color: #5b5608;
+    box-shadow: 0 0 10px rgb(255, 200, 0);
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+}
+
+.pilihan .box img{
+    height: 130px;
+    width: 130px;
+}
+
+.pilihan .box p{
+    font-size: 35px;
+    color: #ffaa00;
+    font-weight: 600;
+    margin: 10px 0 5px 0;
+}
+
+.pilihan .box .harga{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 80px;
+    padding: 20px 40px;
+    color: white;
+    border-top: 3px solid gold;
+}
+
+footer h3{
+    font-size: 25px;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon a{
+    font-size: 30px;
+    color: gold;
+}
+
+footer p{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        padding: 20px;
+    }
+
+    nav .nav-ul {
+        font-size: 15px;
+    }
+
+    .topup-form h1 {
+        font-size: 28px;
+    }
+
+    .topup-form .form h3 {
+        font-size: 20px;
+    }
+
+    .topup-form .form input {
+        width: 90%;
+    }
+
+    .pilihan .box {
+        width: 90%;
+    }
+
+    .pilihan .box img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .pilihan .box p {
+        font-size: 24px;
+    }
+
+    .pilihan .box .harga {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav .nav-ul {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .topup-form h1 {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .topup-form .form h3 {
+        font-size: 18px;
+    }
+
+    .topup-form .form input {
+        width: 100%;
+    }
+
+    .pilihan .box {
+        width: 100%;
+    }
+
+    .pilihan .box img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .pilihan .box p {
+        font-size: 20px;
+    }
+
+    .pilihan .box .harga {
+        font-size: 16px;
+    }
+
+    footer h3 {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+}

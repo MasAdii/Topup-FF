@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Adi Store - Pembayaran</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="assest/css/pembayaran.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>
+        <div class="container-pembayaran">
+            <h1>Konfirmasi Pembayaran</h1>
+            <div class="info">
+                <p>
+                    <strong>ID Player:</strong>
+                    <span id="idPlayer">-</span>
+                </p>
+                <p>
+                    <strong>Diamond:</strong>
+                    <span id="jumlahDiamond">-</span>
+                </p>
+            </div>
+            <h3 style="color: gold;">Pilih Metode Pembayaran</h3>
+            <div class="metode-list" id="metodeList">
+                <div class="metode-item">
+                    <i class="fa-brands fa-google-pay"></i>
+                    Google Play
+                </div>
+                <div class="metode-item">
+                    <i class="fa-solid fa-building-columns"></i>
+                    Bank Transfer
+                </div>
+                <div class="metode-item">
+                    <i class="fa-solid fa-wallet"></i>
+                    Dana
+                </div>
+                <div class="metode-item">
+                    <i class="fa-solid fa-credit-card"></i>
+                    Kartu Kredit
+                </div>
+                <div class="metode-item">
+                    <i class="fa-brands fa-paypal"></i>
+                    PayPal
+                </div>
+                <div class="metode-item">
+                    <i class="fa-brands fa-apple-pay"></i>
+                    Apple Pay
+                </div>
+                <div class="metode-item">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    Cash
+                </div>
+                <div class="metode-item">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    Visa
+                </div>
+                <div class="metode-item">
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    MasterCard
+                </div>
+                <div class="metode-item">
+                    <i class="fa-brands fa-cc-discover"></i>
+                    Discover
+                </div>
+                <div class="metode-item">
+                    <i class="fa-brands fa-cc-jcb"></i>
+                    JCB
+                </div>
+                <div class="metode-item">
+                    <i class="fa-solid fa-mobile-alt"></i>
+                    Mobile Payment
+                </div>
+                <div class="metode-item">
+                    <i class="fa-solid fa-university"></i>
+                    E-Wallet
+                </div>
+                <div class="metode-item">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    Invoice
+                </div>
+                <div class="metode-item">
+                    <i class="fa-solid fa-hand-holding-usd"></i>
+                    Cryptocurrency
+                </div>
+                <div class="metode-item">
+                    <i class="fa-solid fa-receipt"></i>
+                    Gift Card
+                </div>
+                <div class="metode-item">
+                    <i class="fa-solid fa-user-check"></i>
+                    Direct Debit
+                </div>
+            </div>
+            <button class="btn-konfirmasi" id="btnBayar">Bayar Sekarang</button>
+        </div>
+        <script src="assest/js/pembayaran.js"></script>
+    </body>
+</html>

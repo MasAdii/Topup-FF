@@ -1,0 +1,91 @@
+body {
+  background-color: #121212;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #1f1f1f;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 200, 0, 0.3);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  animation: fadeInUp 0.8s ease-in-out both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.icon-success {
+  font-size: 60px;
+  color: gold;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: gold;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.info {
+  text-align: left;
+  margin-top: 20px;
+  background-color: #292929;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.info p {
+  margin: 10px 0;
+}
+
+.btn-home {
+  margin-top: 30px;
+  background-color: gold;
+  color: black;
+  padding: 12px 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-home:hover {
+  background-color: #e6b800;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+  .icon-success {
+    font-size: 48px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .info {
+    font-size: 16px;
+  }
+}
