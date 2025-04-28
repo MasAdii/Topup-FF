@@ -390,6 +390,9 @@ footer p{
 
 
 @media screen and (max-width: 650px) {
+    .container-rotating p{
+        font-size: 20px;
+    }
     nav {
         flex-direction: column;
         padding: 15px;
